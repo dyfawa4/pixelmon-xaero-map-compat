@@ -63,7 +63,9 @@ class MigrationTests(unittest.TestCase):
         original=m.atomic_write;count=0
         def flaky(path,blob):
             nonlocal count
-            if path.is_relative_to(self.target):
+            # Hosted Windows temp roots may use an 8.3 alias (RUNNER~1).
+            # The converter canonicalizes destinations before writing them.
+            if path.resolve().is_relative_to(self.target.resolve()):
                 count+=1
                 if count==2:raise OSError('simulated disk failure')
             return original(path,blob)
