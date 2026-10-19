@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "build": "0.1.0-dev3",
+  "inputs": {
+    "minimap": {
+      "file": "xaerominimap-forge-1.16.5-26.6.0.jar",
+      "sha256": "277cb68a5ed2396258f6d110ad213b49b64b6dad92a19f811c00373ba57738d3",
+      "url": "https://cdn.modrinth.com/data/1bokaNcj/versions/VLhkjJMS/xaerominimap-forge-1.16.5-26.6.0.jar",
+      "project": "https://modrinth.com/mod/xaeros-minimap",
+      "versionId": "VLhkjJMS"
+    },
+    "worldmap": {
+      "file": "xaeroworldmap-forge-1.16.5-1.47.0.jar",
+      "sha256": "673096ea195e89ad3b90ac6fecf5dac77b3f82768abaea305df1ed226f1b96b3",
+      "url": "https://cdn.modrinth.com/data/NcUtCpym/versions/J0hzkJuC/xaeroworldmap-forge-1.16.5-1.47.0.jar",
+      "project": "https://modrinth.com/mod/xaeros-world-map",
+      "versionId": "J0hzkJuC"
+    },
+    "lib": {
+      "file": "xaerolib-forge-1.16.5-1.7.3.jar",
+      "sha256": "4fe7eafb73abb65591c8c3a83918888b1292cfd90c74b9c3c74c8f5febca287d",
+      "url": "https://cdn.modrinth.com/data/ZaQIxZKn/versions/EzhXlKLk/xaerolib-forge-1.16.5-1.7.3.jar",
+      "project": "https://modrinth.com/mod/xaerolib",
+      "versionId": "EzhXlKLk"
+    }
+  },
+  "outputs": {
+    "minimap": {
+      "file": "xaerominimap-forge-1.16.5-26.6.0-pixelmon-0.1.0-dev3.jar",
+      "sha256": "4ce9bf5ee8cf714894d928b4199613944d67aaca70ccb59847de22c2afe19d74",
+      "changedEntries": [
+        "xaero/hud/minimap/radar/icon/cache/id/variant/RadarIconVariantHandler.class",
+        "xaero/hud/minimap/radar/icon/definition/RadarIconDefinitionManager.class",
+        "xaero/hud/minimap/radar/render/element/RadarRenderProvider.class",
+        "xaero/common/settings/ModSettings.class",
+        "xaero/pixelmon/CompassCompat.class",
+        "xaero/pixelmon/CompassHud.class",
+        "xaero/pixelmon/MapOptions.class",
+        "xaero/pixelmon/PixelmonSprites$DynamicDefinition.class",
+        "xaero/pixelmon/PixelmonSprites.class",
+        "coremods/pixelmon_compass.js",
+        "META-INF/coremods.json",
+        "META-INF/pixelmon-fork.json"
+      ]
+    },
+    "worldmap": {
+      "file": "xaeroworldmap-forge-1.16.5-1.47.0-pixelmon-0.1.0-dev3.jar",
+      "sha256": "25044eb95416f98e10e424c8ad7b11d49905076a56287e6bdd3d4a464fae046d",
+      "changedEntries": [
+        "xaero/map/mods/minimap/element/MinimapElementRendererWrapper.class",
+        "xaero/map/pixelmon/WorldRadarGuard.class",
+        "META-INF/pixelmon-fork.json"
+      ]
+    }
+  },
+  "patchTargets": {
+    "minimap": [
+      "xaero/hud/minimap/radar/icon/cache/id/variant/RadarIconVariantHandler",
+      "xaero/hud/minimap/radar/icon/definition/RadarIconDefinitionManager",
+      "xaero/hud/minimap/radar/render/element/RadarRenderProvider",
+      "xaero/common/settings/ModSettings"
+    ],
+    "worldmap": [
+      "xaero/map/mods/minimap/element/MinimapElementRendererWrapper"
+    ]
+  }
+}

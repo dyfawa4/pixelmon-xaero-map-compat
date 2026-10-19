@@ -1,0 +1,20 @@
+# Runtime inputs, proprietary upstream files and private player data
+/.cache/
+/deps/
+/reference/
+/evidence/
+/dist/
+*.jar
+*.zip
+*.exe
+*.sha256
+__pycache__/
+*.py[cod]
+*.spec
+# Local handoff notes and fixture-dependent acceptance runners
+/发布计划.md
+/需求记录.md
+/tools/package.py
+/tools/run_client.py
+/tools/test_migration_runtime.py
+/tools/verify_installer.py
