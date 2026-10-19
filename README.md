@@ -1,5 +1,7 @@
 # 宝可梦 Xaero 地图适配
 
+[![main 自动检查](https://github.com/dyfawa4/pixelmon-xaero-map-compat/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/dyfawa4/pixelmon-xaero-map-compat/actions/workflows/tests.yml?query=branch%3Amain)
+
 为 Minecraft 1.16.5 / Forge 的 Xaero 大小地图增加 Pixelmon 重铸与重铸内容回迁支持，并提供中文 Windows 坐标迁移工具。这是非官方适配项目，与 Xaero96、Pixelmon 官方没有隶属关系。
 
 **[下载公开工具包](https://github.com/dyfawa4/pixelmon-xaero-map-compat/releases/latest)** · **[详细安装与迁移教程](docs/迁移指南.md)** · [验证范围](docs/验证记录.md)
